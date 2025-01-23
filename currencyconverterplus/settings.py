@@ -144,3 +144,8 @@ DATABASES = {
         'PORT': '5432',  # Default PostgreSQL port
     }
 }
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
